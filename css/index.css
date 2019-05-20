@@ -186,8 +186,12 @@ nav a {
   flex-wrap: wrap;
 }
 .book {
+  display: none;
   background-color: lightcyan;
   width: 40%;
   padding: 1rem;
   margin: 1rem;
+}
+.book-show {
+  display: inline;
 }
