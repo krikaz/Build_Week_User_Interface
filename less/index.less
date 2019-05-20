@@ -201,6 +201,8 @@ nav {
 
   display: flex;
   justify-content: space-evenly;
+  align-items: flex-start;
+  // align-content: flex-start;
   flex-wrap: wrap;
 }
 
@@ -210,8 +212,25 @@ nav {
   width: 40%;
   padding: 1rem;
   margin: 1rem;
+
+  .title, .author{
+    font-size: 1.5rem;
+    padding: 0.2rem;
+    text-align: center;
+  }
+
+  .author {
+    font-size: 1.2rem;
+  }
+
+  .sypnosis {
+    margin-top: 1rem;
+    text-align: justify;
+  }
 }
 
 .book-show {
   display: inline;
 }
+
+
