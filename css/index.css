@@ -151,12 +151,14 @@ header {
     align-items: normal;
   }
 }
-header span {
+header div {
   background-color: lightyellow;
   width: 20%;
+  font-size: 4rem;
+  text-align: center;
 }
 @media (max-width: 800px) {
-  header span {
+  header div {
     width: 100%;
   }
 }
@@ -267,13 +269,13 @@ nav a:hover {
 .book {
   display: none;
   background-color: lightcyan;
-  width: 40%;
+  width: 45%;
   padding: 1rem;
-  margin: 1rem;
+  margin: 0.5rem;
 }
 @media (max-width: 800px) {
   .book {
-    width: 80%;
+    width: 90%;
   }
 }
 @media (max-width: 500px) {
