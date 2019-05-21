@@ -152,7 +152,9 @@ nav {
   width: 80%;
   padding: 1rem;
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
+  align-items: normal;
 }
 nav a {
   font-size: 3rem;
@@ -163,6 +165,9 @@ nav a:hover {
 }
 .main {
   display: flex;
+  flex-direction: row;
+  justify-content: normal;
+  align-items: normal;
 }
 .tabs {
   background-color: lightcoral;
@@ -190,9 +195,18 @@ nav a:hover {
   background-color: lightseagreen;
   width: 75%;
   display: flex;
+  flex-direction: row;
   justify-content: space-evenly;
   align-items: flex-start;
   flex-wrap: wrap;
+}
+@media (max-width: 800px) {
+  .books {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
 }
 .book {
   display: none;
@@ -200,6 +214,11 @@ nav a:hover {
   width: 40%;
   padding: 1rem;
   margin: 1rem;
+}
+@media (max-width: 800px) {
+  .book {
+    width: 80%;
+  }
 }
 .book .title,
 .book .author {
@@ -213,6 +232,11 @@ nav a:hover {
 .book .sypnosis {
   margin-top: 1rem;
   text-align: justify;
+}
+@media (max-width: 800px) {
+  .book .sypnosis {
+    font-size: 1.2rem;
+  }
 }
 .book-show {
   display: inline;
