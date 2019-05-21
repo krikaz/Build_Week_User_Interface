@@ -153,6 +153,10 @@ nav {
 nav a {
   font-size: 3rem;
 }
+nav a:hover {
+  background-color: purple;
+  color: lightgreen;
+}
 .main {
   display: flex;
 }
