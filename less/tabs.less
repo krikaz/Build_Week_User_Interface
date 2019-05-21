@@ -1,11 +1,21 @@
 .main {
   .flexbox(row, normal, normal);
+
+  @media @mobile {
+    .flexbox(column, normal, center);
+  }
 }
 
 .tabs {
   background-color: lightcoral;
   width: 25%;
   font-size: 2rem;
+
+  @media @mobile {
+    .flexbox(row, normal, normal);
+    flex-wrap: wrap;
+    width: 40%;
+  }
 }
 
 .tab-link {
