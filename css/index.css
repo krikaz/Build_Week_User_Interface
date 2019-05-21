@@ -133,11 +133,15 @@ body {
   background-color: lightblue;
 }
 .container {
-  width: 900px;
+  max-width: 1000px;
   margin: 0 auto;
+  width: 100%;
 }
 header {
   display: flex;
+  flex-direction: row;
+  justify-content: normal;
+  align-items: normal;
 }
 header span {
   background-color: lightyellow;
