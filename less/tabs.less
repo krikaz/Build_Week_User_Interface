@@ -12,9 +12,11 @@
   font-size: 2rem;
 
   @media @mobile {
-    .flexbox(row, normal, normal);
+    .flexbox(row, center, normal);
     flex-wrap: wrap;
-    width: 40%;
+    width: 100%;
+    font-size: 2rem;
+
   }
 }
 
@@ -22,6 +24,11 @@
   background-color: lightpink;
   padding: 1rem;
   margin: 0.5rem;
+
+  // @media @mobile {
+  //   padding: 0rem;
+  //   margin: 0rem;
+  // }
 
   &:hover {
     background-color: white;
