@@ -9,27 +9,22 @@
 .tabs {
   background-color: @burning-orange;
   width: 25%;
-  font-size: 1.5rem;
+  font-size: @medium-large;
   font-family: 'Istok Web', sans-serif;
 
   @media @mobile {
     .flexbox(row, center, normal);
     flex-wrap: wrap;
     width: 100%;
-    font-size: 2rem;
+    font-size: @large;
 
   }
 }
 
 .tab-link {
   background-color: @sun-orange;
-  padding: 1rem;
-  margin: 0.5rem;
-
-  // @media @mobile {
-  //   padding: 0rem;
-  //   margin: 0rem;
-  // }
+  padding: @medium;
+  margin: @small;
 
   &:hover {
     background-color: @white;

@@ -9,7 +9,7 @@ header {
     background-color: @sun-orange;
     color: @burning-orange;
     width: 20%;
-    font-size: 4rem;
+    font-size: @giant;
     text-align: center;
     font-family: "Indie Flower", cursive;
 
@@ -22,7 +22,7 @@ header {
 nav {
   background-color: @white;
   width: 80%;
-  padding: 1rem;
+  padding: @medium;
   font-family: "Dancing Script", cursive;
 
   .flexbox(row, space-around, normal);
@@ -40,10 +40,10 @@ nav {
     text-decoration: none;
     color: @night-blue;
 
-    font-size: 3rem;
+    font-size: @extraLarge;
 
     @media @mobile {
-      padding: 0.5rem;
+      padding: @small;
     }
 
     &:hover {
