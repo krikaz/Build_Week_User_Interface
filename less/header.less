@@ -9,9 +9,13 @@ header {
     background-color: @sun-orange;
     color: @burning-orange;
     width: 30%;
-    font-size: @extraLarge;
-    text-align: center;
-    font-family: "Indie Flower", cursive;
+    .flexbox(row, center, center);
+
+    p {
+      font-size: @extraLarge;
+      font-family: "Indie Flower", cursive;
+      // text-align: center;
+    }
 
     @media @tablet {
       width: 100%;
