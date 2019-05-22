@@ -321,3 +321,16 @@ nav a:hover {
 .book-show {
   display: inline;
 }
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+footer p {
+  background-color: #ffeb9b;
+  color: #ff9319;
+  width: 30%;
+  padding: 0.5rem;
+  text-align: center;
+}
