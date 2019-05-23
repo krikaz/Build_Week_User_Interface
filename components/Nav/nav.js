@@ -13,11 +13,14 @@
 
 
 const about = document.querySelector('.about');
-const allBooks = document.querySelector('.books');
 const allTabs = document.querySelector('.tabs');
+const allBooks = document.querySelector('.books');
+const allBookCards = Array.from(document.querySelectorAll('.book'));
 
-console.log(allBooks);
-console.log(allTabs);
+// console.log(about);
+// console.log(allTabs);
+// console.log(allBooks);
+console.log(allBookCards);
 
 
 about.addEventListener('click', () => aboutMe());
@@ -25,9 +28,9 @@ about.addEventListener('click', () => aboutMe());
 
 
 function aboutMe() {
-  allBooks.classList.add('hidden');
   allTabs.classList.add('hidden');
+  allBooks.classList.add('hidden');
+  allBookCards.forEach(bookCard => bookCard.classList.remove('book-show'));
 }
 
 
-// console.log(about);
