@@ -2,7 +2,6 @@ const allTabs = document.querySelector('.tabs');
 const allBooks = document.querySelector('.books');
 const allBookCards = Array.from(document.querySelectorAll('.book'));
 const aboutContent = document.querySelector('.aboutContent');
-const randomContent = document.querySelector('.randomContent');
 
 const about = document.querySelector('.about');
 about.addEventListener('click', () => aboutMe());
@@ -13,14 +12,15 @@ random.addEventListener('click', () => randomize());
 function aboutMe() {
   hideAll();
   aboutContent.classList.remove('hidden');
-  randomContent.classList.add('hidden');
 }
 
 function randomize() {
   hideAll()
   aboutContent.classList.add('hidden');
-  randomContent.classList.remove('hidden');
   pickBook();
+  allBooks.style['justify-content'] = 'center';
+  allBooks.style.width = '100%';
+
 
 }
 
@@ -35,4 +35,5 @@ function hideAll() {
   allBooks.classList.add('hidden');
   allBookCards.forEach(bookCard => bookCard.classList.remove('book-show'));
 }
+
 
