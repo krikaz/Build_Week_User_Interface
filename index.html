@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Picker</title>
+    <link rel="stylesheet" href="css/index.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Dancing+Script|Gentium+Basic|Handlee|Indie+Flower|Istok+Web|Philosopher&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <script defer="defer" src="/components/Tabs/tabs.js"></script>
+    <script defer="defer" src="/components/Nav/nav.js"></script>
+
+    <div class="container">
+      <header>
+        <nav>
+          <a href="">Home</a>
+          <a href="#" class="random">Random</a>
+          <a href="#" class="about">About Me</a>
+        </nav>
+        <div><p>Book Picker</p></div>
+      </header>
+
+      <div class="main">
+        <div class="tabs">
+          <div class="tab-link tab-selected" data-genre="all">All Genres</div>
+          <div class="tab-link" data-genre="science-fiction">
+            Science-Fiction
+          </div>
+          <div class="tab-link" data-genre="fantasy">Fantasy</div>
+          <div class="tab-link" data-genre="computer-science">
+            Computer Science
+          </div>
+          <div class="tab-link" data-genre="history">History</div>
+          <div class="tab-link" data-genre="productivity">Productivity</div>
+          <div class="tab-link" data-genre="hacker-history">Hacker History</div>
+        </div>
+
+        <div class="books">
+          <div class="book" data-genre="science-fiction" data-id="1">
+            <h3 class="title">Snow Crash</h3>
+            <p class="author">Neal Stephenson</p>
+            <p class="sypnosis">
+              In reality, Hiro Protagonist delivers pizza for Uncle Enzo's
+              CosoNostra Pizza Inc., but in the Metaverse he's a warrior prince.
+              Plunging headlong into the enigma of a new computer virus that's
+              striking down hackers everywhere, he races along the neon-lit
+              streets on a search-and-destroy mission for the shadowy virtual
+              villain threatening to bring about infocalypse. Snow Crash is a
+              mind-altering romp through a future America so bizarre, so
+              outrageous… you'll recognize it immediately.
+            </p>
+          </div>
+
+          <div class="book" data-genre="fantasy" data-id="2">
+            <h3 class="title">Gardens of the Moon</h3>
+            <p class="author">Steven Erikson</p>
+            <p class="sypnosis">
+              The Malazan Empire simmers with discontent, bled dry by
+              interminable warfare, bitter infighting and bloody confrontations
+              with the formidable Anomander Rake and his Tiste Andii, ancient
+              and implacable sorcerers. Even the imperial legions, long inured
+              to the bloodshed, yearn for some respite. Yet Empress Laseen's
+              rule remains absolute, enforced by her dread Claw assassins. For
+              Sergeant Whiskeyjack and his squad of Bridgeburners, and for
+              Tattersail, surviving cadre mage of the Second Legion, the
+              aftermath of the siege of Pale should have been a time to mourn
+              the many dead. But Darujhistan, last of the Free Cities of
+              Genabackis, yet holds out. It is to this ancient citadel that
+              Laseen turns her predatory gaze. However, it would appear that the
+              Empire is not alone in this great game. Sinister, shadowbound
+              forces are gathering as the gods themselves prepare to play their
+              hand... Conceived and written on a panoramic scale, Gardens of the
+              Moon is epic fantasy of the highest order--an enthralling
+              adventure by an outstanding new voice.
+            </p>
+          </div>
+
+          <div class="book" data-genre="history" data-id="3">
+            <h3 class="title">
+              In the Name of Rome: The Men Who Won the Roman Empire
+            </h3>
+            <p class="author">Adrian Goldsworthy</p>
+            <p class="sypnosis">
+              The complete and definitive history of how Roman generals carved
+              out the greatest and longest-lasting empire the world has ever
+              seen. The Roman army was one of the most effective fighting forces
+              in history. The legions and their commanders carved out an empire
+              which eventually included the greater part of the known world.
+              This was thanks largely to the generals who led the Roman army to
+              victory after victory, and whose strategic and tactical decisions
+              shaped the course of several centuries of warfare. This book, by
+              the author of THE PUNIC WARS, concentrates on those Roman generals
+              who displayed exceptional gifts of leadership and who won the
+              greatest victories. With 26 chapters covering the entire span of
+              the Roman Empire, it is a complete history of Roman warfare.
+            </p>
+          </div>
+
+          <div class="book" data-genre="hacker-history" data-id="4">
+            <h3 class="title">Hackers: Heroes of the Computer Revolution</h3>
+            <p class="author">Steven Levy</p>
+            <p class="sypnosis">
+              A mere fifteen years ago, computer nerds were seen as marginal
+              weirdos, outsiders whose world would never resonate with the
+              mainstream. That was before one pioneering work documented the
+              underground computer revolution that was about to change our world
+              forever. With groundbreaking profiles of Bill Gates, Steve
+              Wozniak, MIT's Tech Model Railroad Club, and more, Steven Levy's
+              Hackers brilliantly captured a seminal moment when the risk-takers
+              and explorers were poised to conquer twentieth-century America's
+              last great frontier. And in the Internet age, the hacker
+              ethic-first espoused here-is alive and well.
+            </p>
+          </div>
+
+          <div class="book" data-genre="computer-science" data-id="5">
+            <h3 class="title">Understanding the Digital World</h3>
+            <p class="author">Brian W. Kernighan</p>
+            <p class="sypnosis">
+              Computers are everywhere. Some of them are highly visible, in
+              laptops, tablets, cell phones, and smart watches. But most are
+              invisible, like those in appliances, cars, medical equipment,
+              transportation systems, power grids, and weapons. We never see the
+              myriad computers that quietly collect, share, and sometimes leak
+              vast amounts of personal data about us. Through computers,
+              governments and companies increasingly monitor what we do. Social
+              networks and advertisers know far more about us than we should be
+              comfortable with, using information we freely give them. Criminals
+              have all-too-easy access to our data. Do we truly understand the
+              power of computers in our world?
+            </p>
+          </div>
+
+          <div class="book" data-genre="productivity" data-id="6">
+            <h3 class="title">Why We Sleep</h3>
+            <p class="author">Matthew Walker</p>
+            <p class="sypnosis">
+              Sleep is one of the most important but least understood aspects of
+              our life, wellness, and longevity. Until very recently, science
+              had no answer to the question of why we sleep, or what good it
+              served, or why we suffer such devastating health consequences when
+              we don't sleep. Compared to the other basic drives in life—eating,
+              drinking, and reproducing—the purpose of sleep remained elusive.
+              An explosion of scientific discoveries in the last twenty years
+              has shed new light on this fundamental aspect of our lives. Now,
+              preeminent neuroscientist and sleep expert Matthew Walker gives us
+              a new understanding of the vital importance of sleep and dreaming.
+              Within the brain, sleep enriches our ability to learn, memorize,
+              and make logical decisions. It recalibrates our emotions, restocks
+              our immune system, fine-tunes our metabolism, and regulates our
+              appetite. Dreaming mollifies painful memories and creates a
+              virtual reality space in which the brain melds past and present
+              knowledge to inspire creativity.
+            </p>
+          </div>
+
+          <div class="book" data-genre="hacker-history" data-id="7">
+            <h3 class="title">The Cuckoo's Egg</h3>
+            <p class="author">Clifford Stoll</p>
+            <p class="sypnosis">
+              Before the Internet became widely known as a global tool for
+              terrorists, one perceptive U.S. citizen recognized its ominous
+              potential. Armed with clear evidence of computer espionage, he
+              began a highly personal quest to expose a hidden network of spies
+              that threatened national security. But would the authorities back
+              him up? Cliff Stoll's dramatic firsthand account is "a
+              computer-age detective story, instantly fascinating [and]
+              astonishingly gripping" (Smithsonian). Cliff Stoll was an
+              astronomer turned systems manager at Lawrence Berkeley Lab when a
+              75-cent accounting error alerted him to the presence of an
+              unauthorized user on his system. The hacker's code name was
+              "Hunter" -- a mysterious invader who managed to break into U.S.
+              computer systems and steal sensitive military and security
+              information. Stoll began a one-man hunt of his own: spying on the
+              spy. It was a dangerous game of deception, broken codes,
+              satellites, and missile bases -- a one-man sting operation that
+              finally gained the attention of the CIA...and ultimately trapped
+              an international spy ring fueled by cash, cocaine, and the KGB.
+            </p>
+          </div>
+
+          <div class="book" data-genre="science-fiction" data-id="8">
+            <h3 class="title">Daemon</h3>
+            <p class="author">Daniel Suarez</p>
+            <p class="sypnosis">
+              Technology controls almost everything in our modern-day world,
+              from remote entry on our cars to access to our homes, from the
+              flight controls of our airplanes to the movements of the entire
+              world economy. Thousands of autonomous computer programs, or
+              daemons, make our networked world possible, running constantly in
+              the background of our lives, trafficking e-mail, transferring
+              money, and monitoring power grids. For the most part, daemons are
+              benign, but the same can't always be said for the people who
+              design them. Matthew Sobol was a legendary computer game
+              designer—the architect behind half-a-dozen popular online games.
+              His premature death depressed both gamers and his company's stock
+              price. But Sobol's fans aren't the only ones to note his passing.
+              When his obituary is posted online, a previously dormant daemon
+              activates, initiating a chain of events intended to unravel the
+              fabric of our hyper-efficient, interconnected world. With Sobol's
+              secrets buried along with him, and as new layers of his daemon are
+              unleashed at every turn, it's up to an unlikely alliance to
+              decipher his intricate plans and wrest the world from the grasp of
+              a nameless, faceless enemy—or learn to live in a society in which
+              we are no longer in control. . . .
+            </p>
+          </div>
+
+          <div class="book" data-genre="fantasy" data-id="9">
+            <h3 class="title">A Game of Thrones</h3>
+            <p class="author">George R. R. Martin</p>
+            <p class="sypnosis">
+              Long ago, in a time forgotten, a preternatural event threw the
+              seasons out of balance. In a land where summers can last decades
+              and winters a lifetime, trouble is brewing. The cold is returning,
+              and in the frozen wastes to the north of Winterfell, sinister and
+              supernatural forces are massing beyond the kingdom’s protective
+              Wall. At the center of the conflict lie the Starks of Winterfell,
+              a family as harsh and unyielding as the land they were born to.
+              Sweeping from a land of brutal cold to a distant summertime
+              kingdom of epicurean plenty, here is a tale of lords and ladies,
+              soldiers and sorcerers, assassins and bastards, who come together
+              in a time of grim omens. Here an enigmatic band of warriors bear
+              swords of no human metal; a tribe of fierce wildlings carry men
+              off into madness; a cruel young dragon prince barters his sister
+              to win back his throne; and a determined woman undertakes the most
+              treacherous of journeys. Amid plots and counterplots, tragedy and
+              betrayal, victory and terror, the fate of the Starks, their
+              allies, and their enemies hangs perilously in the balance, as each
+              endeavors to win that deadliest of conflicts: the game of thrones.
+            </p>
+          </div>
+
+          <div class="book" data-genre="history" data-id="10">
+            <h3 class="title">Sapiens: A Brief History of Humankind</h3>
+            <p class="author">Yuval Noah Harari</p>
+            <p class="sypnosis">
+              100,000 years ago, at least six human species inhabited the earth.
+              Today there is just one. Us. Homo sapiens. How did our species
+              succeed in the battle for dominance? Why did our foraging
+              ancestors come together to create cities and kingdoms? How did we
+              come to believe in gods, nations and human rights; to trust money,
+              books and laws; and to be enslaved by bureaucracy, timetables and
+              consumerism? And what will our world be like in the millennia to
+              come?
+            </p>
+          </div>
+
+          <div class="book" data-genre="productivity" data-id="11">
+            <h3 class="title">
+              Mastery: The Keys to Success and Long-Term Fulfillment
+            </h3>
+            <p class="author">George Leonard</p>
+            <p class="sypnosis">
+              Drawing on Zen philosophy and his expertise in the martial art of
+              aikido, bestselling author Gorge Leonard shows how the process of
+              mastery can help us attain a higher level of excellence and a
+              deeper sense of satisfaction and fulfillment in our daily lives.
+              Whether you're seeking to improve your career or your intimate
+              relationships, increase self-esteem or create harmony within
+              yourself, this inspiring prescriptive guide will help you master
+              anything you choose and achive success in all areas of your life.
+            </p>
+          </div>
+
+          <div class="book" data-genre="computer-science" data-id="12">
+            <h3 class="title">Code</h3>
+            <p class="author">Charles Petzold</p>
+            <p class="sypnosis">
+              What do flashlights, the British invasion, black cats, and seesaws
+              have to do with computers? In CODE, they show us the ingenious
+              ways we manipulate language and invent new means of communicating
+              with each other. And through CODE, we see how this ingenuity and
+              our very human compulsion to communicate have driven the
+              technological innovations of the past two centuries. Using
+              everyday objects and familiar language systems such as Braille and
+              Morse code, author Charles Petzold weaves an illuminating
+              narrative for anyone who’s ever wondered about the secret inner
+              life of computers and other smart machines. It’s a cleverly
+              illustrated and eminently comprehensible story—and along the way,
+              you’ll discover you’ve gained a real context for understanding
+              today’s world of PCs, digital media, and the Internet. No matter
+              what your level of technical savvy, CODE will charm you—and
+              perhaps even awaken the technophile within.
+            </p>
+          </div>
+
+          <div class="book" data-genre="hacker-history" data-id="13">
+            <h3 class="title">Masters of Doom</h3>
+            <p class="author">David Kushner</p>
+            <p class="sypnosis">
+                Masters of Doom is the amazing true story of the Lennon and McCartney of video games: John Carmack and John Romero. Together, they ruled big business. They transformed popular culture. And they provoked a national controversy. More than anything, they lived a unique and rollicking American Dream, escaping the broken homes of their youth to produce the most notoriously successful game franchises in history—Doom and Quake— until the games they made tore them apart. This is a story of friendship and betrayal, commerce and artistry—a powerful and compassionate account of what it's like to be young, driven, and wildly creative.
+            </p>
+          </div>
+
+          <div class="book" data-genre="fantasy" data-id="14">
+            <h3 class="title">The Way of Kings</h3>
+            <p class="author">Brandon Sanderson</p>
+            <p class="sypnosis">
+                Roshar is a world of stone and storms. Uncanny tempests of incredible power sweep across the rocky terrain so frequently that they have shaped ecology and civilization alike. Animals hide in shells, trees pull in branches, and grass retracts into the soilless ground. Cities are built only where the topography offers shelter.
+
+                It has been centuries since the fall of the ten consecrated orders known as the Knights Radiant, but their Shardblades and Shardplate remain: mystical swords and suits of armor that transform ordinary men into near-invincible warriors. Men trade kingdoms for Shardblades. Wars were fought for them, and won by them.
+                
+                One such war rages on a ruined landscape called the Shattered Plains. There, Kaladin, who traded his medical apprenticeship for a spear to protect his little brother, has been reduced to slavery. In a war that makes no sense, where ten armies fight separately against a single foe, he struggles to save his men and to fathom the leaders who consider them expendable.
+            </p>
+          </div>
+
+          <div class="book" data-genre="science-fiction" data-id="15">
+            <h3 class="title">Hyperion</h3>
+            <p class="author">Dan Simmons</p>
+            <p class="sypnosis">
+                On the world called Hyperion, beyond the law of the Hegemony of Man, there waits the creature called the Shrike. There are those who worship it. There are those who fear it. And there are those who have vowed to destroy it. In the Valley of the Time Tombs, where huge, brooding structures move backward through time, the Shrike waits for them all. On the eve of Armageddon, with the entire galaxy at war, seven pilgrims set forth on a final voyage to Hyperion seeking the answers to the unsolved riddles of their lives. Each carries a desperate hope—and a terrible secret. And one may hold the fate of humanity in his hands. 
+            </p>
+          </div>
+
+          <div class="book" data-genre="history" data-id="16">
+            <h3 class="title">The Second World War</h3>
+            <p class="author">Antony Beevor</p>
+            <p class="sypnosis">
+                Over the past two decades, Antony Beevor has established himself as one of the world's premier historians of WWII. His multi-award winning books have included Stalingrad and The Fall of Berlin 1945. Now, in his newest and most ambitious book, he turns his focus to one of the bloodiest and most tragic events of the twentieth century, the Second World War.
+
+                In this searing narrative that takes us from Hitler's invasion of Poland on September 1st, 1939 to V-J day on August 14th, 1945 and the war's aftermath, Beevor describes the conflict and its global reach--one that included every major power. The result is a dramatic and breathtaking single-volume history that provides a remarkably intimate account of the war that, more than any other, still commands attention and an audience.
+                
+                Thrillingly written and brilliantly researched, Beevor's grand and provocative account is destined to become the definitive work on this complex, tragic, and endlessly fascinating period in world history, and confirms once more that he is a military historian of the first rank. 
+            </p>
+          </div>
+
+          <div class="book" data-genre="computer-science" data-id="17">
+            <h3 class="title">Gödel, Escher, Bach: An Eternal Golden Braid</h3>
+            <p class="author">Douglas R. Hofstadter</p>
+            <p class="sypnosis">
+                Douglas Hofstadter's book is concerned directly with the nature of “maps” or links between formal systems. However, according to Hofstadter, the formal system that underlies all mental activity transcends the system that supports it. If life can grow out of the formal chemical substrate of the cell, if consciousness can emerge out of a formal system of firing neurons, then so too will computers attain human intelligence. Gödel, Escher, Bach is a wonderful exploration of fascinating ideas at the heart of cognitive science: meaning, reduction, recursion, and much more.
+            </p>
+          </div>
+
+          <div class="book" data-genre="productivity" data-id="18">
+            <h3 class="title">The 80/20 Principle</h3>
+            <p class="author"> Richard Koch</p>
+            <p class="sypnosis">
+                How anyone can be more effective with less effort by learning how to identify and leverage the 80/20 principle--the well-known, unpublicized secret that 80 percent of all our results in business and in life stem from a mere 20 percent of our efforts.
+
+                The 80/20 principle is one of the great secrets of highly effective people and organizations.
+                
+                Did you know, for example, that 20 percent of customers account for 80 percent of revenues? That 20 percent of our time accounts for 80 percent of the work we accomplish? The 80/20 Principle shows how we can achieve much more with much less effort, time, and resources, simply by identifying and focusing our efforts on the 20 percent that really counts. Although the 80/20 principle has long influenced today's business world, author Richard Koch reveals how the principle works and shows how we can use it in a systematic and practical way to vastly increase our effectiveness, and improve our careers and our companies.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="aboutContent hidden">
+        <p>
+          My name is Pascal Bou. I am a Full Stack Web Development student at
+          Lambda School, cohort WEBEU2. This is a website build during the Build
+          Week - web development fundamentals. You will find below my social
+          media links.
+        </p>
+
+        <div class="icons">
+          <a href="https://github.com/krikaz"
+            ><img src="assets/octocat.jpg" alt="github personal page"
+          /></a>
+          <a href="https://www.linkedin.com/in/pascal-bou-9077a5184"
+            ><img src="assets/in.png" alt="linkedin personal page"
+          /></a>
+          <a href="https://lambdaschool.com/eu/"
+            ><img src="assets/lambda.png" alt="lambda school eu"
+          /></a>
+        </div>
+      </div>
+
+      <footer>
+        <p>Made by Pascal Bou - 2019</p>
+      </footer>
+    </div>
+  </body>
+</html>

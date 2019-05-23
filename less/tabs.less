@@ -1,0 +1,44 @@
+.main {
+  .flexbox(row, normal, normal);
+
+  @media @mobile {
+    .flexbox(column, normal, center);
+  }
+}
+
+.tabs {
+  background-color: @burning-orange;
+  width: 25%;
+  font-size: @mediumLarge;
+  font-family: 'Istok Web', sans-serif;
+  height: fit-content;
+
+  @media @mobile {
+    .flexbox(row, center, normal);
+    flex-wrap: wrap;
+    width: 100%;
+    font-size: @large;
+
+  }
+}
+
+.tab-link {
+  background-color: @sun-orange;
+  padding: @medium;
+  margin: @small;
+
+  &:hover {
+    background-color: @white;
+    color: @night-blue;
+  }
+}
+
+.tab-selected {
+  background-color: @suit-up-blue;
+  color: @white;
+
+  &:hover {
+    background-color: @suit-up-blue;
+    color: @white;
+  }
+}

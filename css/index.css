@@ -1,0 +1,358 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #f4f8ff;
+}
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  width: 100%;
+}
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: normal;
+  align-items: normal;
+}
+@media (max-width: 800px) {
+  header {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: normal;
+    align-items: normal;
+  }
+}
+header div {
+  background-color: #ffeb9b;
+  color: #ff9319;
+  width: 30%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+header div p {
+  font-size: 3rem;
+  font-family: "Indie Flower", cursive;
+}
+@media (max-width: 800px) {
+  header div {
+    width: 100%;
+  }
+}
+nav {
+  background-color: #f4f8ff;
+  width: 70%;
+  padding: 1rem;
+  font-family: "Dancing Script", cursive;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: normal;
+}
+@media (max-width: 800px) {
+  nav {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: normal;
+    align-items: center;
+    width: 100%;
+  }
+}
+nav a {
+  text-decoration: none;
+  color: #01193f;
+  font-size: 3rem;
+}
+@media (max-width: 500px) {
+  nav a {
+    padding: 0.5rem;
+  }
+}
+nav a:hover {
+  background-color: #062e72;
+  color: #f4f8ff;
+}
+.main {
+  display: flex;
+  flex-direction: row;
+  justify-content: normal;
+  align-items: normal;
+}
+@media (max-width: 500px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: normal;
+    align-items: center;
+  }
+}
+.tabs {
+  background-color: #ff9319;
+  width: 25%;
+  font-size: 1.5rem;
+  font-family: 'Istok Web', sans-serif;
+  height: fit-content;
+}
+@media (max-width: 500px) {
+  .tabs {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: normal;
+    flex-wrap: wrap;
+    width: 100%;
+    font-size: 2rem;
+  }
+}
+.tab-link {
+  background-color: #ffeb9b;
+  padding: 1rem;
+  margin: 0.5rem;
+}
+.tab-link:hover {
+  background-color: #f4f8ff;
+  color: #01193f;
+}
+.tab-selected {
+  background-color: #062e72;
+  color: #f4f8ff;
+}
+.tab-selected:hover {
+  background-color: #062e72;
+  color: #f4f8ff;
+}
+.books {
+  background-color: #f4f8ff;
+  width: 75%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+@media (max-width: 800px) {
+  .books {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
+@media (max-width: 500px) {
+  .books {
+    width: 100%;
+  }
+}
+.book {
+  display: none;
+  background-color: #b7d3ff;
+  width: 47%;
+  padding: 1rem;
+  margin: 0.5rem;
+}
+@media (max-width: 800px) {
+  .book {
+    width: 90%;
+  }
+}
+@media (max-width: 500px) {
+  .book {
+    width: 90%;
+  }
+}
+.book .title,
+.book .author {
+  font-size: 1.5rem;
+  padding: 0.2rem;
+  text-align: center;
+}
+.book .title {
+  font-family: 'Handlee', cursive;
+}
+.book .author {
+  font-size: 1.2rem;
+  font-family: 'Philosopher', sans-serif;
+}
+.book .sypnosis {
+  margin-top: 1rem;
+  text-align: justify;
+  font-family: 'Gentium Basic', serif;
+}
+@media (max-width: 800px) {
+  .book .sypnosis {
+    font-size: 1.2rem;
+  }
+}
+.book-show {
+  display: inline;
+}
+.aboutContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: normal;
+  align-items: normal;
+}
+.aboutContent p {
+  padding: 2rem;
+}
+.aboutContent .icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 2rem;
+}
+.aboutContent img {
+  width: 100px;
+}
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+footer p {
+  background-color: #ffeb9b;
+  color: #ff9319;
+  width: 30%;
+  padding: 0.5rem;
+  text-align: center;
+}
+.hidden {
+  display: none;
+}

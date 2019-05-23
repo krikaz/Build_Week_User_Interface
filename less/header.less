@@ -1,0 +1,57 @@
+header {
+  .flexbox(row, normal, normal);
+
+  @media @tablet {
+    .flexbox(column-reverse, normal, normal);
+  }
+
+  div {
+    background-color: @sun-orange;
+    color: @burning-orange;
+    width: 30%;
+    .flexbox(row, center, center);
+
+    p {
+      font-size: @extraLarge;
+      font-family: "Indie Flower", cursive;
+    }
+
+    @media @tablet {
+      width: 100%;
+    }
+  }
+}
+
+nav {
+  background-color: @white;
+  width: 70%;
+  padding: @medium;
+  font-family: "Dancing Script", cursive;
+
+  .flexbox(row, space-around, normal);
+
+  @media @tablet {
+    width: 100%;
+  }
+
+  @media @mobile {
+    .flexbox(column, normal, center);
+    width: 100%;
+  }
+
+  a {
+    text-decoration: none;
+    color: @night-blue;
+
+    font-size: @extraLarge;
+
+    @media @mobile {
+      padding: @small;
+    }
+
+    &:hover {
+      background-color: @suit-up-blue;
+      color: @white;
+    }
+  }
+}

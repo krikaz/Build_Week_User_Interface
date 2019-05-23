@@ -1,0 +1,63 @@
+.books {
+  background-color: @white;
+
+  width: 75%;
+
+  .flexbox(row, space-between, flex-start);
+  flex-wrap: wrap;
+
+  @media @tablet {
+    .flexbox(column, flex-start, center);
+  }
+
+  @media @mobile {
+    width: 100%;
+  }
+}
+
+.book {
+  display: none;
+  background-color: @sky-blue;
+  width: 47%;
+  padding: @medium;
+  margin: @small;
+
+  @media @tablet {
+    width: 90%;
+  }
+
+  @media @mobile {
+    width: 90%;
+  }
+
+
+  .title, .author{
+    font-size: @mediumLarge;
+    padding: @extraSmall;
+    text-align: center;
+  }
+
+  .title {
+    font-family: 'Handlee', cursive;
+  }
+
+  .author {
+    font-size: @mediumPlus;
+    font-family: 'Philosopher', sans-serif;
+
+  }
+
+  .sypnosis {
+    margin-top: @medium;
+    text-align: justify;
+    font-family: 'Gentium Basic', serif;
+
+    @media @tablet {
+      font-size: @mediumPlus;
+    }
+  }
+}
+
+.book-show {
+  display: inline;
+}
