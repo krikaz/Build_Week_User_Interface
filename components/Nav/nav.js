@@ -29,12 +29,6 @@ function pickBook() {
   const randomNumber = (Math.floor(Math.random() * 12)+1).toString();
   const pickedBook = document.querySelector(`.book[data-id='${randomNumber}']`)
   pickedBook.classList.add('book-show');
-
-  console.log(allBooks);
-
-  console.log(randomNumber);
-  console.log(pickedBook);
-
 }
 
 function hideAll() {
