@@ -17,6 +17,7 @@ function aboutMe() {
 function randomize() {
   hideAll()
   aboutContent.classList.add('hidden');
+  allBooks.classList.remove('hidden');
   pickBook();
   allBooks.style['justify-content'] = 'center';
   allBooks.style.width = '100%';
@@ -28,6 +29,12 @@ function pickBook() {
   const randomNumber = (Math.floor(Math.random() * 12)+1).toString();
   const pickedBook = document.querySelector(`.book[data-id='${randomNumber}']`)
   pickedBook.classList.add('book-show');
+
+  console.log(allBooks);
+
+  console.log(randomNumber);
+  console.log(pickedBook);
+
 }
 
 function hideAll() {
@@ -35,5 +42,6 @@ function hideAll() {
   allBooks.classList.add('hidden');
   allBookCards.forEach(bookCard => bookCard.classList.remove('book-show'));
 }
+
 
 
