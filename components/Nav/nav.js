@@ -3,7 +3,6 @@
 //     this.anchorElement = anchorElement;
 //     this.anchorElement.addEventListener('mouseover', () => this.hover());
 
-
 //   }
 
 //   hover() {
@@ -12,6 +11,23 @@
 //   }
 // }
 
-// const anchors = document.querySelectorAll('header nav a');
-// anchors.forEach(anchor => new Anchor(anchor));
-// // console.log(anchors);
+
+const about = document.querySelector('.about');
+const allBooks = document.querySelector('.books');
+const allTabs = document.querySelector('.tabs');
+
+console.log(allBooks);
+console.log(allTabs);
+
+
+about.addEventListener('click', () => aboutMe());
+
+
+
+function aboutMe() {
+  allBooks.classList.add('hidden');
+  allTabs.classList.add('hidden');
+}
+
+
+// console.log(about);
